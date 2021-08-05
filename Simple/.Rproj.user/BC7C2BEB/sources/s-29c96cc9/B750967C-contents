@@ -1,0 +1,55 @@
+# WIM code
+
+# 순서
+# 먼저 단일기관 별로 cph 모델을 생성한다.
+require(RODBC)
+require(plyr)
+require(dplyr)
+require(ggplot2)
+require(reshape)
+require(survival)
+require(zoo)
+
+# db connection
+my_server= "61.252.54.67" #"서버 경로를 입력해주세요"
+my_db="CDM"
+my_username= "wonseok" #"서버 사용자 ID"
+my_pwd="yonsei2020!" #"서버 사용자의 비밀번호"
+port = ",11433"
+
+paste0("DRIVER=ODBC Driver 13 for SQL Server;server=",my_server,port,
+       ";database=",my_db,
+       ";uid=",my_username,
+       ";pwd=",my_pwd)
+odbcConnect(dsn="localhost", uid = "root", pwd = "123456",DBMSencoding="UTF-8")
+
+conn <- odbcConnect(dsn=my_server, uid =my_username, pwd=my_pwd, DBMSencoding="UTF-8", )
+sqlQuery(())
+
+odbcConnect(conn, query = )
+
+
+############################# make Connection ####################################
+db <- odbcDriverConnect(paste0("DRIVER=ODBC Driver 13 for SQL Server;server=",my_server,port,
+                               ";database=",my_db,
+                               ";uid=",my_username,
+                               ";pwd=",my_pwd))
+
+query.for.data <- '
+
+
+'
+
+
+
+
+# 각 기관으로부터 온 CSV를 읽어들인다.
+
+
+read.csv("../data/", stringsAsFactors = F, header = T) #데이터 파일 안에 있는 것들을 읽어온다.
+
+
+
+
+
+

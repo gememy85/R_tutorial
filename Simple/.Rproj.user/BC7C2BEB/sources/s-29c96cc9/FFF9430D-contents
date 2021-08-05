@@ -1,0 +1,10 @@
+Package: Simple
+Type: Package
+Title: Simple Examples
+Version: 1.0.0
+Author: Wonseok Jang
+Maintainer: wonseok <memy85@yonsei.ac.kr>
+Description: This is a simple example of writing packages
+License: BSD
+Encoding: UTF-8
+LazyData: true
